@@ -24,7 +24,7 @@
 | Banco       | Sqlite + Sequelize |
 | Agendamento | Node-Cron          |
 | Alertas     | Nodemailer         |
-| Container   | Docker + Compose   |
+| Container   | Docker + Compose   | Ainda em desenvolvimento
 
 ---
 
