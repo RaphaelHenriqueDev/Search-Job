@@ -1,4 +1,4 @@
-# 🔍 Job Monitor — Automação de Busca de Vagas
+# 🔍 Search and Job Monitor — Automação de Busca de Vagas
 
 > Scraping automatizado de vagas de emprego com alertas por email.  
 > Stack: Node.js · Puppeteer · Express · Sqlite · Docker
