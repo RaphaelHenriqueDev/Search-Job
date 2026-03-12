@@ -1,4 +1,5 @@
 import Job from '../models/Job.js'
+import { Op } from 'sequelize'
 import { UniqueConstraintError } from 'sequelize'
 
 const JobService = {
@@ -17,9 +18,9 @@ const JobService = {
   async findAll(filters = {}) {
     const where = {}
 
-    if (filters.stack) where.stack = filters.stack
-    if (filters.city) where.city = filters.city
-    if (filters.source) where.source = filters.source
+    if (filters.stack) where.stack = { [Op.like]: `%${filters.stack}%` }
+    if (filters.city) where.city = { [Op.like]: `%${filters.city}%` }
+    if (filters.source) where.source = { [Op.like]: `%${filters.source}%` }
 
     return await Job.findAll({ where })
   },

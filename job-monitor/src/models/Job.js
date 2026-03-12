@@ -28,6 +28,10 @@ const Job = conn.define('Jobs', {
     type: DataTypes.STRING,
     allowNull: true,
   },
+  published: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
   source: {
     type: DataTypes.STRING,
     allowNull: true,

@@ -54,6 +54,11 @@ const JobSearcher = {
                 null,
               city:
                 card
+                  .querySelector('span[data-testid="job-location"]')
+                  ?.innerText?.trim() || null,
+              link: card.querySelector('a')?.href || null,
+              published:
+                card
                   .querySelector('span[data-testid="listing-card-footer"]')
                   ?.innerText?.trim() || null,
               link: card.querySelector('a')?.href || null,

@@ -26,6 +26,7 @@ const AlertService = {
             <th>Cargo</th>
             <th>Empresa</th>
             <th>Cidade</th>
+            <th>Publicação</th>
             <th>Fonte</th>
             <th>Link</th>
           </tr>
@@ -38,6 +39,7 @@ const AlertService = {
               <td>${job.title}</td>
               <td>${job.company || '—'}</td>
               <td>${job.city || '—'}</td>
+              <td>${job.published || '—'}</td>
               <td>${job.source || '—'}</td>
               <td><a href="${job.link}">Ver vaga</a></td>
             </tr>
